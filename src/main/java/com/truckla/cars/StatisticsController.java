@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StatisticsController {
 
     @Autowired
-    FleetStatisticsService service;
+    transient FleetStatisticsService service;
 
     @GetMapping(value = "/{age}")
     public FleetAge getCarById() {

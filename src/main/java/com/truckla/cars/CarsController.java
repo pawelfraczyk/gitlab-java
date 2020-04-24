@@ -12,7 +12,7 @@ import java.util.List;
 public class CarsController {
 
     @Autowired
-    private CarsRepository repository;
+    private transient CarsRepository repository;
 
     @GetMapping
     public List<Car> getCars() {

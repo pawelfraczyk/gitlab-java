@@ -17,10 +17,10 @@ import static org.mockito.Mockito.when;
 public class FleetStatisticsServiceTest {
 
     @InjectMocks
-    private FleetStatisticsService service;
+    private transient FleetStatisticsService service;
 
     @Mock
-    private CarsRepository repo;
+    private transient CarsRepository repo;
 
 
     @BeforeEach

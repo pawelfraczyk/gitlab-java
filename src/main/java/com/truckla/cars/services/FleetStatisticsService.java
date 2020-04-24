@@ -13,7 +13,7 @@ import java.util.OptionalDouble;
 public class FleetStatisticsService {
 
     @Autowired
-    private CarsRepository repository;
+    private transient CarsRepository repository;
 
     public FleetAge getAverageFleetAge() {
 
