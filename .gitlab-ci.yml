@@ -77,7 +77,7 @@ api testing:
     entrypoint: [""]
   script:
     - newman --version
-    - newman run "original.json" --environment Production.postman_environment.json --reporters cli,htmlextra,junit --reporter-htmlextra-export "newman/report.html" --reporter-junit-export "newman/report.html"
+    - newman run "original.json" --environment Production.postman_environment.json --reporters cli,htmlextra,junit --reporter-htmlextra-export "newman/report.html" --reporter-junit-export "newman/report.xml"
   artifacts:
     when: always
     paths:
